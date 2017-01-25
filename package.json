@@ -3,6 +3,7 @@
   "version": "0.0.1-alpha",
   "description": "",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "jest",
     "precompile": "typings install",

@@ -1,5 +1,9 @@
 node_modules/
+typings/
 .vscode/
+.gitignore
 
 __tests__/
 preprocessor.js
+typings.json
+tsconfig.json
