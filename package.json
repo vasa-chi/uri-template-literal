@@ -1,6 +1,6 @@
 {
   "name": "uri-template-literal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small function to format URIs as tagged template literal",
   "main": "index.js",
   "typings": "index.d.ts",
