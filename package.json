@@ -1,0 +1,45 @@
+{
+  "name": "uri-template-literal",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "precompile": "typings install",
+    "compile": "tsc",
+    "predist": "rm -rf dist && mkdir dist && npm run compile",
+    "dist": "browserify index.js --standalone uriTemplate > dist/uriTemplate.js",
+    "postdist": "uglifyjs dist/uriTemplate.js -o dist/uriTemplate.min.js",
+    "prepublish": "npm run test && npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasa-chi/uri-template-literal.git"
+  },
+  "keywords": [
+    "template-literals",
+    "uri"
+  ],
+  "author": "Vasily Chinarev <vasa.chi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasa-chi/uri-template-literal/issues"
+  },
+  "homepage": "https://github.com/vasa-chi/uri-template-literal#readme",
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "jest": "^18.1.0",
+    "typescript": "^2.1.5",
+    "uglify-js": "^2.7.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\-test\\.(ts|js)$"
+  }
+}

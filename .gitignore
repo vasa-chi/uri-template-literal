@@ -1,0 +1,8 @@
+node_modules/
+typings/
+.vscode/
+
+*.log
+
+index.js
+index.d.ts
