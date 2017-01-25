@@ -1,6 +1,6 @@
 {
   "name": "uri-template-literal",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1-alpha.2",
   "description": "",
   "main": "index.js",
   "typings": "index.d.ts",
