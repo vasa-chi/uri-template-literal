@@ -1,5 +1,3 @@
-/// <reference path="../typings/globals/jasmine/index.d.ts" />
-
 import uri from "../src/index";
 
 describe("uri template string", function() {
